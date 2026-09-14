@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #06080F;
+    color: #F8FAFC;
+  }
+  
+  h1, h2, h3, .font-heading {
+    font-family: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Cinematic Glow & RGB Utilities */
+.rgb-border-glow {
+  box-shadow: 0 0 25px -5px rgba(0, 229, 255, 0.3), 0 0 35px -10px rgba(229, 57, 53, 0.25);
+}
+
+.cinematic-vignette {
+  background: radial-gradient(circle at center, transparent 40%, rgba(6, 8, 15, 0.85) 90%, #06080F 100%);
+}
+
+.bg-cinematic-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Ambient Stage Beam Effect */
+@keyframes beamSweep {
+  0%, 100% {
+    transform: rotate(-15deg) scaleY(1);
+    opacity: 0.25;
+  }
+  50% {
+    transform: rotate(15deg) scaleY(1.15);
+    opacity: 0.45;
+  }
+}
+
+.animate-beam-left {
+  animation: beamSweep 12s ease-in-out infinite alternate;
+}
+
+.animate-beam-right {
+  animation: beamSweep 15s ease-in-out infinite alternate-reverse;
+}
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+

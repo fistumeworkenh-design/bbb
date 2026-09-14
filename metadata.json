@@ -1,0 +1,6 @@
+{
+  "name": "ARESLED Screen Factory",
+  "description": "Official website for ARESLED LED Screen Factory. Over 15 years manufacturing high-performance indoor, outdoor, stage rental, and stadium LED video walls with factory-direct WhatsApp and online ordering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
